@@ -6,10 +6,18 @@ const StateFullForm = () => {
     const [name, setName] = useState(null)
     const [email, setEmail] = useState(null)
     const [password, setPassword] = useState(null)
+    const [error, setError] = useState('')
 
 
     const handleSubmitState = e => {
         e.preventDefault()
+
+        if (password.length < 6) {
+            setError('Password must be 6 character or longer')
+        }
+        else {
+            setError('')
+        }
         console.log(name, email, password)
     }
 
@@ -52,6 +60,10 @@ const StateFullForm = () => {
                     type="password" name="password" id="" />
                 <br />
                 <input type="submit" value="Submit" />
+
+                {
+                    error && <p>{error}</p>
+                }
             </form>
         </div>
     );
