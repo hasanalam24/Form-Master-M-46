@@ -1,5 +1,6 @@
 
 import './App.css'
+import RefForm from './Components/RefForm/RefForm'
 import SimpleForm from './Components/SimpleForm/SimpleForm'
 import StateFullForm from './Components/StateFullForm/StateFullForm'
 
@@ -12,7 +13,8 @@ function App() {
       <h1>Vite + React</h1>
 
       {/* <SimpleForm></SimpleForm> */}
-      <StateFullForm></StateFullForm>
+      {/* <StateFullForm></StateFullForm> */}
+      <RefForm></RefForm>
     </>
   )
 }
