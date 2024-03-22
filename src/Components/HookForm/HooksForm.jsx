@@ -4,19 +4,23 @@ import useInputState from "../Hooks/UseInputState";
 const HooksForm = () => {
 
     // custom hooks file from UseINputState
-    const [name, handleNameChange] = useInputState('Hasan')
+    // const [name, handleNameChange] = useInputState('Hasan')
+
+    const emailState = useInputState('HasanEmail')
+
+
 
     const handleSubmit = e => {
-        console.log('form data', name)
+        console.log('form data', emailState.value)
         e.preventDefault()
     }
 
     return (
         <div>
             <form onSubmit={handleSubmit}>
-                <input value={name} onChange={handleNameChange} type="text" name="name" id="" />
+                {/* <input value={name} onChange={handleNameChange} type="text" name="name" id="" /> */}
                 <br />
-                <input type="email" name="email" id="" />
+                <input {...emailState} type="text" name="email" id="" />
                 <br />
                 <input type="phone" name="phone" id="" />
                 <br />
