@@ -8,7 +8,7 @@ const Aunt = () => {
             <section>
                 <Cousin name={'Mamshad'}></Cousin>
                 <Cousin name={'Rubaiya'}></Cousin>
-
+                {/* name hocce prop hisabe jacche */}
             </section>
         </div>
     );
