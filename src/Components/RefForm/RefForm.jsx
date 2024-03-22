@@ -13,9 +13,9 @@ const RefForm = () => {
 
     const handleRef = e => {
         e.preventDefault()
-        console.log(nameRef.current.value)
-        console.log(emailRef.current.value)
-        console.log(passwordRef.current.value)
+        // console.log(nameRef.current.value)
+        // console.log(emailRef.current.value)
+        // console.log(passwordRef.current.value)
     }
 
     return (
@@ -23,7 +23,7 @@ const RefForm = () => {
             <form onSubmit={handleRef}>
                 <input ref={nameRef} type="text" name="name" id="" />
                 <br />
-                <input ref={emailRef} type="email" name="email" id="" />
+                <input ref={emailRef} defaultValue={'hasan@gmail.com'} type="email" name="email" id="" />
                 <br />
                 <input ref={passwordRef} type="password" name="password" id="" />
                 <br />
