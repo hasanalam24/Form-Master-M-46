@@ -1,5 +1,6 @@
 
 import './App.css'
+import GrandPa from './Components/GrandPa/GrandPa'
 import ReusableForm from './Components/ReusableForm/ReusableForm'
 // import HooksForm from './Components/HookForm/HooksForm'
 // import RefForm from './Components/RefForm/RefForm'
@@ -9,19 +10,21 @@ import ReusableForm from './Components/ReusableForm/ReusableForm'
 
 function App() {
 
-  const handleSignUpSubmit = data => {
+  // const handleSignUpSubmit = data => {
 
-    console.log('sing up data', data)
-  }
-  const handleUpdateProfile = data => {
-    // e.preventDefault()
-    console.log('updatte profile', data)
-  }
+  //   console.log('sing up data', data)
+  // }
+  // const handleUpdateProfile = data => {
+  //   // e.preventDefault()
+  //   console.log('updatte profile', data)
+  // }
 
   return (
     <>
 
-      <h1>Vite + React</h1>
+      <h1>Form Master</h1>
+
+      <GrandPa></GrandPa>
 
       {/* <SimpleForm></SimpleForm> */}
       {/* <StateFullForm></StateFullForm> */}
@@ -29,7 +32,7 @@ function App() {
 
       {/* <HooksForm></HooksForm> */}
 
-      <ReusableForm
+      {/* <ReusableForm
         formTitle={'Sign Up'}
         handleSubmit={handleSignUpSubmit}>
         <div>
@@ -43,7 +46,7 @@ function App() {
         submitBtnText='Update'
         handleSubmit={handleUpdateProfile}>
 
-      </ReusableForm>
+      </ReusableForm> */}
 
     </>
   )
